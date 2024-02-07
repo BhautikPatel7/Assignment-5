@@ -4,7 +4,7 @@
 }
 
 .imageupper {
-    height: 80vh;
+    height: 90vh;
 }
 
 .image_main {
@@ -42,10 +42,12 @@ text-align: center;
 }
 .modal-footer{
     text-align: center;
+    margin-top: -63px;
    
 }
 .close_btn{
-    top: 50%;
+  margin-right: -65%;
+    top: 0%;
     position: relative;
     height: 50px;
     width: 50px;
@@ -66,7 +68,7 @@ text-align: center;
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +101,7 @@ text-align: center;
   .mySwiper {
     height: 20%;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .mySwiper .swiper-slide {
@@ -117,4 +119,20 @@ text-align: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .mySwiper2, .swiper{
+    width: 400px;
+    height: 200px;
+  }
+  .swiper-slide1 img{
+    width: 126px;
+    height: 64px;
+    margin: 10px;
+    border: 3px solid black;
+  }
+  .mySwiper .swiper-slide{
+    margin-top: -45px;
+  }
+  .swiper-button-next{
+    margin-left: 100px !important;
   }

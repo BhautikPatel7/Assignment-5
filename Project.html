@@ -21,10 +21,11 @@
       <!-- <img src="background/images/banner2.jpg" alt=""> -->
       <div class="imageupper">
         <header>
-          <img class="chekbtn" src="/background/images/menu.svg" alt="Menu Icon" style="width: 30px;">
+          <img class="chekbtn" src="/Assignment_5_under_dev/background/images/menu.svg" alt="Menu Icon"
+            style="width: 30px;">
           <div class="header_container">
             <div class="connect_login_space">
-              <img src="/background/images/logo_1.png" alt="Volunteer Overseas Header Image">
+              <img src="/Assignment_5_under_dev/background/images/logo_1.png" alt="Volunteer Overseas Header Image">
               <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home">HOW IT WORKS</a></h4>
               <h4 class="header_right_part contact_us_heading"><a href="#Home">CONTACT US</a></h4>
               <div class="rightsection">
@@ -49,13 +50,60 @@
 
               <!-- Add image inside the body of modal -->
               <div class="modal-body">
+                
                 <!-- <img id="image" src="background/images/banner-img.jpg" alt="Click on button" /> -->
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary close_btn" data-dismiss="modal">
+                    X
+                  </button>
+                </div>
+
                 <!-- Swiper Slider Code Here -->
 
+                <div style="--swiper-navigation-color: #fff ; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner-img.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner5.jpg" />
+                    </div>
 
 
-
-
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide1 swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner-img.jpg" />
+                    </div>
+                    <div class="swiper-slide1 swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner2.jpg" />
+                    </div>
+                    <div class="swiper-slide1 swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner3.jpg" />
+                    </div>
+                    <div class="swiper-slide1 swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner4.jpg" />
+                    </div>
+                    <div class="swiper-slide1 swiper-slide">
+                      <img src="/Assignment_5_under_dev/background/images/banner5.jpg" />
+                    </div>           
+                  </div>
+                </div>
+              
 
 
 
@@ -68,13 +116,11 @@
 
 
                 
+                
+                
               </div>
 
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary close_btn" data-dismiss="modal">
-                  X
-                </button>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -86,12 +132,15 @@
       </div>
     </div>
   </section>
+
+  <!-- Second Section For Map Navigation -->
+  
   <!-- Footer Goes Here -->
 
   <footer>
     <div class="footer_main">
       <div class="logo_fot">
-        <img src="/background/images/logo_1.png" alt="Footer Logo">
+        <img src="/Assignment_5_under_dev/background/images/logo_1.png" alt="Footer Logo">
       </div>
       <div class="text_fot">
         <div class="faq">
@@ -116,28 +165,28 @@
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Swiper Slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 0,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10000,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    </script>
+  <!-- Swiper Slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
 </body>
 
 </html>
