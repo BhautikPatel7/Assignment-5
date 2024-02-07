@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imageupper {
+    height: 80vh;
+}
+
+.image_main {
+    box-shadow: inset 0px 0px 550px 90px rgb(10, 8, 8);
+}
+
+.view_photo {
+text-align: center;
+}
+
+.btn_photo {
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn_photo:hover {
+    scale: 1;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.connect_login_space{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff;
+}
+.modal-body img{
+    height: 20%;
+    width: 30%;
+}
+.modal-body{
+    align-items: center;
+    text-align: center;
+}
+.modal-footer{
+    text-align: center;
+   
+}
+.close_btn{
+    top: 50%;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+#exampleModal{
+    margin-top: 50px;
+}
+/* Swiper Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

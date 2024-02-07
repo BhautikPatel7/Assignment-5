@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Additionsl Details</title>
+  <link rel="stylesheet" href="background/headerandbgimg.css">
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="background/footer.css">
+  <link rel="stylesheet" href="Project.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <section id="Home">
+    <div class="image_main" id="mydiv">
+      <!-- <img src="background/images/banner2.jpg" alt=""> -->
+      <div class="imageupper">
+        <header>
+          <img class="chekbtn" src="/background/images/menu.svg" alt="Menu Icon" style="width: 30px;">
+          <div class="header_container">
+            <div class="connect_login_space">
+              <img src="/background/images/logo_1.png" alt="Volunteer Overseas Header Image">
+              <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home">HOW IT WORKS</a></h4>
+              <h4 class="header_right_part contact_us_heading"><a href="#Home">CONTACT US</a></h4>
+              <div class="rightsection">
+                <h4><a href="#Home" style="padding-left: 20px; padding-right: 20px; border-radius: 3px;">Login</a></h4>
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+        <!-- Button to launch a modal -->
+        <div class="view_photo">
+          <button type="button" class="btn btn-primary btn_photo" data-toggle="modal" data-target="#exampleModal">
+            view photos
+          </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <!-- Add image inside the body of modal -->
+              <div class="modal-body">
+                <!-- <img id="image" src="background/images/banner-img.jpg" alt="Click on button" /> -->
+                <!-- Swiper Slider Code Here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close_btn" data-dismiss="modal">
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Adding scripts to use bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+        </script>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Goes Here -->
+
+  <footer>
+    <div class="footer_main">
+      <div class="logo_fot">
+        <img src="/background/images/logo_1.png" alt="Footer Logo">
+      </div>
+      <div class="text_fot">
+        <div class="faq">
+          <h4>faq</h4>
+        </div>
+        <div class="contact_us_fot">
+          <h4>Contact Us</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Swiper Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 0,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10000,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+</body>
+
+</html>
