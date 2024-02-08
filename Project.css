@@ -12,7 +12,8 @@
 }
 
 .view_photo {
-text-align: center;
+text-align: center !important;
+margin-left: 50%;
 }
 
 .btn_photo {
@@ -150,3 +151,244 @@ text-align: center;
   .swiper-button-next{
     margin-left: 100px !important;
   }
+  .box_img img{
+    border: 1px solid rgb(37, 141, 161);
+  }
+  .box_img{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .box_img h5{
+    margin-left: 10px;
+    color: rgb(37, 141, 161);
+  }
+  .tab_head h3{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: rgb(37, 141, 161);
+    font-size: 40px;
+  }
+  .dolar{
+    display: flex;
+  }
+  .img_rupie img{
+    margin-right: 10px;
+  }
+  .row{
+    width: 65%;
+  }
+  .container{
+    display: flex;
+  }
+  .text1 {
+    width: fit-content;
+  }
+  .text1 p{
+    border: 1px solid black;
+    padding: 6px 10px;
+    background-color: #2ab4c8;
+    border-color: #00acc4;
+    color: #fff;
+  }
+  #start_dt{
+    color: #85898a;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-color: #00acc4;
+  }
+  .text3 p{
+    margin-top: 10px;
+  }
+  #duration{
+    color: #85898a;
+    padding: 13px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border-color: #00acc4;
+  }
+  .appl{
+    margin-top: 10px;
+    margin-top: 15px;
+    text-align: center;
+ 
+  }
+  .appl > button{
+    width: 100%;
+    color: #fff;
+    background-color: #e43b50;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #e43b50;
+  }
+  .popup_static{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 25px 22px;
+    width: 50%;
+    background-color: #00acc4;
+    height: 40%;
+  }
+  .google_map{
+    width: 90%;
+  }
+  .people {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  p{
+    color: #fff;
+  }
+  #cal_image{
+top: 10px;
+  }
+  .text_dollar > p{
+    color: #85898a;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #e43b50;
+    border-radius: 0px;
+  }
+  .mb-3{
+    margin-bottom: 5px;
+    border-top: 1px solid #85898a;
+  }
+  .nav-link{
+    color: #00acc4;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .close{
+  display: none;
+  }
+  .modal-header{
+    border-bottom: none;
+  }
+  .modal-footer{
+    border: none;
+  }
+  .modal-body{
+    /* background-color: #fff; */
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+  .model{
+    --bs-modal-border-color: none;
+    margin: 0;
+    padding: 0;
+  }
+  .modal-content{
+    border:none;
+  }
+  .heading_model{
+    border-bottom: 1px solid #85898a;
+  }
+  label, input, select, button {
+    float: left;
+    clear: both;
+    margin-bottom: 2px;
+    color: #85898a;
+    outline: none;
+   
+  }
+  label{
+    margin-top: 10px;
+    color: #85898a;
+  }
+  #full_name{
+    width: 100%;
+    padding: 5px;
+    border-color: #85898a;
+    border-radius: 5px;
+  }
+
+  #start_date{
+    width: 100%;
+    padding: 5px;
+    border-color: #85898a;
+    border-radius: 5px;
+  }
+  #duration1, #email1, #phone1{
+    width: 100%;
+    border-radius: 5px;
+    border-color: #85898a;
+    padding: 5px;
+  }
+  #sign_up{
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    border-color: #e43b50;
+    background-color: #e43b50;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  #apply_pop{
+    margin-top: 25px;
+  }
+  .body_model2{
+    background-color: #fff;
+    width: 70%;
+    margin-left: 24%;
+  }
+  .btn-primary {
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+}
+.btn-primary:active{
+  color: black !important;
+}
+.lorem35{
+  color: #85898a;
+}
+.dlr{
+  color: #00acc4;
+  font-size: 35px;
+}
+.lorem_des{
+  color: #85898a;
+}
+.hj{
+  font-size: 35px;
+  color: #00acc4;
+  font-weight: 600;
+}
+.text_des_pr > p , .text_des_pr1 >p{
+  color: #85898a;
+}
+th{
+  color: #fff;
+  background-color: #00acc4;
+}
+table,tr,td,th{
+  border: 1px solid #85898a;
+}
+th{
+  padding: 10px 40px;
+}
+td{
+  padding: 10px 40px;
+  color: #00acc4;
+  font-size: 18px;
+}
+.dth{
+  color: #e43b50;
+  font-size: 23px;
+}
+table{
+  margin-bottom: 30px;
+}
+.carousel-control-next {
+  top: -140px;
+  right: -20px;
+}
+.carousel-control-prev{
+  top: -141px;
+  left: -45px;
+}

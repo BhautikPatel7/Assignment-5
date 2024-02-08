@@ -5,14 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Additionsl Details</title>
+  <!-- Owl Carasol -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   <link rel="stylesheet" href="background/headerandbgimg.css">
   <!-- Swiper Slider -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="background/footer.css">
   <link rel="stylesheet" href="Project.css">
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
+
+  <style>
   </style>
 </head>
 
@@ -22,8 +29,7 @@
       <!-- <img src="background/images/banner2.jpg" alt=""> -->
       <div class="imageupper">
         <header>
-          <img class="chekbtn" src="/images/menu.svg" alt="Menu Icon"
-            style="width: 30px;">
+          <img class="chekbtn" src="/images/menu.svg" alt="Menu Icon" style="width: 30px;">
           <div class="header_container">
             <div class="connect_login_space">
               <img src="images/logo_1.png" alt="Volunteer Overseas Header Image">
@@ -35,8 +41,6 @@
             </div>
           </div>
         </header>
-
-
         <!-- Button to launch a modal -->
         <div class="view_photo">
           <button type="button" class="btn btn-primary btn_photo" data-toggle="modal" data-target="#exampleModal">
@@ -48,20 +52,15 @@
           aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-
               <!-- Add image inside the body of modal -->
               <div class="modal-body">
-                
                 <!-- <img id="image" src="background/images/banner-img.jpg" alt="Click on button" /> -->
-
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary close_btn" data-dismiss="modal">
                     X
                   </button>
                 </div>
-
                 <!-- Swiper Slider Code Here -->
-
                 <div style="--swiper-navigation-color: #fff ; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -79,8 +78,6 @@
                     <div class="swiper-slide">
                       <img src="/images/banner5.jpg" />
                     </div>
-
-
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -101,27 +98,10 @@
                     </div>
                     <div class="swiper-slide1 swiper-slide">
                       <img src="/images/banner5.jpg" />
-                    </div>           
+                    </div>
                   </div>
                 </div>
-              
-
-
-
-
-
-
-
-
-
-
-
-                
-                
-                
               </div>
-
-             
             </div>
           </div>
         </div>
@@ -138,13 +118,243 @@
   <section id="tab_layout">
     <div class="container">
       <div class="row">
-        <div class="col-xl-8 .col-lg-8 .col-md-6 .col-sm-6 	.col-12">
-          One of three columns
+        <div>
+          <div class="row">
+            <div class="tab_head">
+              <h3>Ghana Medical</h3>
+            </div>
+            <div class="box_img">
+              <img src="images/play-logo.png\" alt="">
+              <h5>Plan My Gap Year</h5>
+            </div>
+          </div>
         </div>
-        <div class="col-xl-4 .col-lg-4 .col-md-6 .col-sm-6 	.col-12">
-          One of three columns
+        <div class="dolar">
+          <div class="img_rupie">
+            <img src="images/icon1.png" alt="">
+          </div>
+          <div class="text_dollar">
+            <p>
+              From $714 For 2 Weeks
+            </p>
+          </div>
         </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-Description-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-Description" type="button" role="tab" aria-controls="pills-Description"
+              aria-selected="true">Description</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-Location-tab" data-bs-toggle="pill" data-bs-target="#pills-Location"
+              type="button" role="tab" aria-controls="pills-Location" aria-selected="false">Location</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-Cost-tab" data-bs-toggle="pill" data-bs-target="#pills-Cost"
+              type="button" role="tab" aria-controls="pills-Cost" aria-selected="false">Cost</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-Dates-tab" data-bs-toggle="pill" data-bs-target="#pills-Dates"
+              type="button" role="tab" aria-controls="pills-Dates" aria-selected="false">Dates</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-Organization-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-Organization" type="button" role="tab" aria-controls="pills-Organization"
+              aria-selected="false">Organization</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-Description" role="tabpanel"
+            aria-labelledby="pills-Description-tab">
+          <p class="lorem35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae a cupiditate beatae hic enim unde nostrum consequuntur quam earum laborum, velit facere odit ea voluptate eos rerum nam cumque fugit sequi et neque quae?
+          </p>
+          </div>
+          <div class="tab-pane fade" id="pills-Location" role="tabpanel" aria-labelledby="pills-Location-tab">
+            <iframe class="google_map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.210011653487!2d72.53007681120954!3d23.08940677903993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e832f450cca5f%3A0xaae8abef53764548!2sPLUSINFOSYS!5e0!3m2!1sen!2sin!4v1707383622823!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="tab-pane fade" id="pills-Cost" role="tabpanel" aria-labelledby="pills-Cost-tab">
+            <h3 class="dlr">$21</h3>
+            <p class="lorem_des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, incidunt.</p>
+            <h3 class="dlr">$32</h3>
+            <p class="lorem_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias architecto quod officia.</p>
+            <h3 class="dlr">$40</h3>
+            <p class="lorem_des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quaerat praesentium tenetur eos cum ea cumque quia. A ipsam sed praesentium perferendis ratione voluptas totam!</p>
+          </div>
+          <div class="tab-pane fade" id="pills-Dates" role="tabpanel" aria-labelledby="pills-Dates-tab">
+            <!-- Dates Tabel Go Here -->
+            <div class="main_pr_date">
+              <div class="hes"><h3 class="hj">Project Start Dates</h3></div>
+              <div class="text_des_pr"><p>For the majority of our programs you can apply at any time. However, we adviparticularly if you're looking to travel between June and August, as spaces can fill up very quickly during this period. Some of our programs have a limited capacity and spaces get filled very quickly. However, you should always make sure you're 100% committed to the program before applying</p></div>
+              <div class="text_des_pr1"><p>The program ends on the Sunday of your final  should depart the accommodation on this day.</p></div>
+
+              <!-- Owl Carasol -->
+
+
+              <div class="maintabel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <table class="item">
+                        <tr>
+                          <th>February 2018</th>
+                          <th>March 2018 </th>
+                          <th>April 2018</th>
+                          <th>May 2018  </th>
+                        </tr>
+                        <tr>
+                          <td><span class="dth">04</span>Sunday</td>
+                          <td><span class="dth">07</span>Sunday</td>
+                          <td><span class="dth">04</span>Sunday</td>
+                          <td><span class="dth">04</span>Sunday</td>
+                        </tr>
+                        <tr>
+                          <td><span class="dth">18</span>Sunday</td>
+                          <td><span class="dth">21</span>Sunday</td>
+                          <td><span class="dth">18</span>Sunday</td>
+                          <td><span class="dth">18</span>Sunday</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="carousel-item">
+                      <table class="item">
+                        <tr>
+                          <th>June 2018</th>
+                          <th>July 2018 </th>
+                          <th>August 2018</th>
+                          <th>September 2018  </th>
+                        </tr>
+                        <tr>
+                          <td><span class="dth">12</span>Sunday</td>
+                          <td><span class="dth">08</span>Sunday</td>
+                          <td><span class="dth">11</span>Sunday</td>
+                          <td><span class="dth">13</span>Sunday</td>
+                        </tr>
+                        <tr>
+                          <td><span class="dth">14</span>Sunday</td>
+                          <td><span class="dth">22</span>Sunday</td>
+                          <td><span class="dth">19</span>Sunday</td>
+                          <td><span class="dth">18</span>Sunday</td>
+                        </tr>
+                      </table>
       
+      
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                  </a>
+                </div>
+
+                <div class="owl-carousel owl-theme">
+                
+                <!-- Second table -->
+                
+
+              </div>
+                  <!-- Owl Stops Here -->
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="pills-Organization" role="tabpanel" aria-labelledby="pills-Organization-tab">
+            <h3 class="dlr">Our Mission</h3>
+            <p class="lorem_des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, incidunt.</p>
+            <h3 class="dlr">Our Vission</h3>
+            <p class="lorem_des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur architecto, numquam in veritatis debitis deserunt. Atque amet magnam asperiores itaque deleniti ipsam excepturi error numquam.</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="popup_static">
+        <div class="box_of_popup">
+          <div class="text1">
+            <p>23 <span class="people"> people</span> are researching this project</p>
+          </div>
+        </div>
+        <div class="text2">
+          <p>Project start date</p>
+        </div>
+        <div class="date1">
+          <!-- <img id="cal_image" src="images/orange-calander-icon.png" alt=""> -->
+          <input type="date" name="start date" id="start_dt">
+        </div>
+        <div class="text3">
+          <p>Duration</p>
+        </div>
+        <div class="dropdown1">
+          <select name="duration" id="duration">
+            <option value="1">1 Week</option>
+            <option value="2" selected>2 Weeks</option>
+            <option value="3">3 Weeks</option>
+            <option value="4">4 Weeks</option>
+          </select>
+        </div>
+        <div class="appl">
+          <button type="button" name="Apply Now" id="apply_pop" value="Apply Now" class="apl btn btn-primary"
+            data-toggle="modal" data-target="#exampleModal1">Apply Now</button>
+
+
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body body_model2">
+                  <div class="heading_model">
+                    <h4>Sign Up</h4>
+                  </div>
+                  <form action="your_action_url_here" method="POST">
+                    <label for="full_name">Full Name:</label><br>
+                    <input type="text" id="full_name" name="full_name" required onkeydown="return /[a-z]/i.test(event.key)"><br>
+
+                    <label for="start_date">Project Start Date:</label><br>
+                    <input type="date" id="start_date" name="start_date" required><br>
+
+                    <label for="duration">Duration:</label><br>
+                    <select id="duration1" name="duration" required>
+                      <option value="">Select Duration</option>
+                      <option value="1">1 week</option>
+                      <option value="2" selected>2 week</option>
+                      <option value="3">3 week</option>
+                      <!-- Add more options as needed -->
+                    </select><br>
+
+                    <label for="email1">Email:</label><br>
+                    <input type="email" id="email1" name="email" required><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone1" name="phone" required onkeypress="return /[0-9]/i.test(event.key)" maxlength="10"> <br>
+                    <div class="pop_submit_btn">
+                      <button type="submit" id="sign_up">Sign Up</button><br>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desc">
+          <p>Applying through Volunteer Overseas gets you access to exclusive travel scholarships and a no-fee
+            fundraising platform</p>
+        </div>
       </div>
     </div>
   </section>
@@ -177,11 +387,25 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
     integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- Swiper Slider -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            1000:{
+                items:1
+            }
+          
+        }
+    });
+    </script>
+    
   <script>
     var swiper = new Swiper(".mySwiper", {
       loop: true,
@@ -202,6 +426,8 @@
       },
     });
   </script>
+
+</body>
 </body>
 
 </html>
