@@ -207,7 +207,7 @@
                           <div class="progress"></div>
                         </div>
                         <div class="range-input">
-                          <input type="range" class="range-min" min="" max="100" value="25" step="1" onchange="popup_one()">
+                          <input type="range" class="range-min" min="" max="100" value="25" step="1" onchange="popup_one4()">
                           <input type="range" class="range-max" min="0" max="100" value="75" step="1">
                         </div>
                       </div>
@@ -220,7 +220,7 @@
                     <div class="col-sm-8 start_dt durt_mar ">Minimum Age</div>
                   </div>
                   <div class="row mt-4">
-                    <div class="col"><Select required class="month_select" id="min_age" onchange="popup_one()">
+                    <div class="col"><Select required class="month_select" id="min_age" onchange="popup_one5()">
                         <option value="--" disabled selected>--</option>
                         <option value="18">18</option>
                         <option value="19">19</option>
@@ -253,7 +253,7 @@
                       <div class="col-sm-4 reset">Reset</div>
                     </div>
                     <div class="row mt-4">
-                      <div class="col-4"><Select required class="month_select dropkick" onchange="popup_one()">
+                      <div class="col-4"><Select required class="month_select dropkick" onchange="popup_one6()">
                           <option value="" disabled selected>month</option>
                           <option value="january">january</option>
                           <option value="february">february</option>
@@ -318,7 +318,7 @@
                         <div class="wrapper">
                           <div class="price-input">
                             <div class="field">
-                              <input type="number" class="input-min" value="1" onchange="popup_one()">
+                              <input type="number" class="input-min" value="1" onchange="popup_one7()">
                               <span>week</span>
                             </div>
                             <div class="separator">-</div>
@@ -344,7 +344,7 @@
                       <div class="col-sm-8 start_dt durt_mar ">Minimum Age</div>
                     </div>
                     <div class="row mt-4">
-                      <div class="col"><Select required class="month_select" id="min_age" onchange="popup_one()">
+                      <div class="col"><Select required class="month_select" id="min_age" onchange="popup_one8()">
                           <option value="--" disabled selected>--</option>
                           <option value="18">18</option>
                           <option value="19">19</option>
@@ -401,7 +401,7 @@
                 <div class="col reset">Reset</div>
               </div>
               <div class="row mt-4">
-                <div class="col-4"><Select required class="month_select dropkick" onchange="popup_one1()">
+                <div class="col-4"><Select required class="month_select dropkick" onchange="popup_one9()">
                     <option value="" disabled selected>month</option>
                     <option value="january">january</option>
                     <option value="february">february</option>
@@ -477,7 +477,7 @@
                     <div class="slider">
                       <div class="progress"></div>
                     </div>
-                    <div class="range-input" onchange="popup_one2()">
+                    <div class="range-input" onchange="popup_one10()">
                       <input type="range" class="range-min" min="" max="100" value="25" step="1">
                       <input type="range" class="range-max" min="0" max="100" value="75" step="1">
                     </div>
@@ -491,7 +491,7 @@
                 <div class="col-sm-8 min_age">Minimum Age</div>
               </div>
               <div class="row mt-4">
-                <div class="col"><Select required class="month_select" id="min_age" onchange="popup_one3()">
+                <div class="col"><Select required class="month_select" id="min_age" onchange="popup_one11()">
                     <option value="--" disabled selected>--</option>
                     <option value="18">18</option>
                     <option value="19">19</option>
@@ -1780,54 +1780,117 @@
        $('.dropkick').dropkick({});
   </script>
   <script type="text/javascript">
+   var checkboxCount = 1;
+    var countOfSearchCalled = false;
+    var dropdownchangeCalled = false;
+    var popupOneCalled = false;
 
+    var $checkboxes = $('input[type="checkbox"]');
 
-var count ;
-  var $checkboxes = $('input[type="checkbox"]');
+    $checkboxes.change(function(){
+        var countCheckedCheckboxes = $checkboxes.filter(':checked').length;
+        
+        // Check if the checkbox was checked or unchecked
+        if (countCheckedCheckboxes > checkboxCount) {
+            // Checkbox was checked
+            checkboxCount = checkboxCount + 1;
+        } else {
+            // Checkbox was unchecked
+            checkboxCount = checkboxCount - 1;
+        }
 
-$checkboxes.change(function(){
-      var countCheckedCheckboxes = $checkboxes.filter(':checked').length;
-      count = countCheckedCheckboxes
-      $('#mobile_badge').text(count);
-      $('#tab_badge').text(count);
-      
-    
+        $('#mobile_badge').text(checkboxCount);
+        $('#tab_badge').text(checkboxCount);
     });
-  function countOfSearch() {
-        count = count+1;
-          $('#mobile_badge').text(count);
-          $('#tab_badge').text(count);
 
+    function countOfSearch() {
+        if (!countOfSearchCalled) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            countOfSearchCalled = true;
+        }
     }
+
     function dropdownchange() {
-        count = count+1;
-          $('#mobile_badge').text(count);
-          $('#tab_badge').text(count);
-
+        if (!dropdownchangeCalled) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            dropdownchangeCalled = true;
+        }
     }
+
     function popup_one() {
-        count = count+1;
-          $('#mobile_badge').text(count);
-          $('#tab_badge').text(count);
-
+        if (!popupOneCalled) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            popupOneCalled = true;
+        }
+        
     }
-    function popup_one1() {
-        count = count+1;
-          $('#badge_mobile').text("2");
-
+    function popup_one4() {
+        if (!popupOneCalled4) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            popupOneCalled4 = true;
+        }
+        
     }
-    function popup_one2() {
-        count = count+1;
-          $('#badge_mobile').text("3");
-
+    function popup_one5() {
+        if (!popupOneCalled5) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            popupOneCalled5 = true;
+        }
+        
     }
-    function popup_one3() {
-        count = count+1;
-          $('#badge_mobile').text("4");
-
+    function popup_one6() {
+        if (!popupOneCalled6) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            popupOneCalled6 = true;
+        }
+        
+    }
+    function popup_one7() {
+        if (!popupOneCalled7) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            popupOneCalled7 = true;
+        }
+        
+    }
+    function popup_one8() {
+        if (!popupOneCalled8) {
+            checkboxCount = checkboxCount + 1;
+            $('#mobile_badge').text(checkboxCount);
+            $('#tab_badge').text(checkboxCount);
+            popupOneCalled8 = true;
+        }
+        
     }
 
-   
+    
+    function popup_one9() {
+        checkboxCount = checkboxCount + 1;
+        $('#badge_mobile').text(checkboxCount);
+    }
+
+    function popup_one10() {
+        checkboxCount = checkboxCount + 1;
+        $('#badge_mobile').text(checkboxCount);
+    }
+
+    function popup_one11() {
+        checkboxCount = checkboxCount + 1;
+        $('#badge_mobile').text(checkboxCount);
+    }
   </script>
   <script src="nouislider_my.js"></script>
 
